@@ -3,9 +3,8 @@
  * Rachel Gilbert
  * 
  * Created: 8/30/15
- * Last Modified: 8/30/15
- * Notes: goldilocks passed 
- * rockpaperscissors passed
+ * Last Modified: 9/1/15
+ * Notes:
  * Sources used:
  */
 #include <cassert>
