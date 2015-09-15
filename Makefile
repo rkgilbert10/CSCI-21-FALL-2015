@@ -28,3 +28,9 @@ lecture: lecture.cpp
 	
 pc5: pc5.cpp
 	g++ -o pc5 pc5.cpp
+	
+challenge6: challenge6.cpp
+	g++ -o challenge6 challenge6.cpp
+	
+challenge7: challenge7.cpp
+	g++ -o challenge7 challenge7.cpp
