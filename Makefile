@@ -34,3 +34,6 @@ challenge6: challenge6.cpp
 	
 challenge7: challenge7.cpp
 	g++ -o challenge7 challenge7.cpp
+	
+ProgrammingProject1: ProgrammingProject1.cpp
+	g++ -o ProgrammingProject1 ProgrammingProject1.cpp
