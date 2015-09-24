@@ -42,23 +42,27 @@ int main (int argc, char* argv[]) {
 // CODE HERE -- FUNCTION DEFINITIONS
 /* Called by convertTemperature if target units is 'M' */
 float Converter::fahrenheitToCelsius (float temp){
-	temp = ((temp-32)*5/9);
-	return temp;
+	float tempConverted = ((temp-32)*5/9);
+	return tempConverted;
+	
 }
 /* Called by convertTemperature if target units is 'I' */
 float Converter::celsiusToFahrenheit (float temp){
-	temp = ((temp*1.8)+32);
-	return temp;
+	float tempConverted = ((temp*1.8)+32);
+	return tempConverted;
+
 }
 /* Called by convertDistance if target units is 'M' */
 float Converter::feetToMeters (float distance){
-	distance = distance*0.3048;
-	return distance;
+	float convertedDistance = distance*0.3048;
+	return convertedDistance;
+	
+
 }
 /* Called by convertDistance if target units is 'I' */
 float Converter::metersToFeet (float distance){
-	distance = distance*3.28084;
-	return distance;
+	float convertedDistance = distance*3.28084;
+	return convertedDistance;
 }
 /*
  * Convert a temperature from metric to imperial units or from
@@ -72,11 +76,13 @@ float Converter::metersToFeet (float distance){
  */
 float Converter::convertTemperature (float temp, char targetUnits){
 	if (targetUnits == 'M'){
-		fahrenheitToCelsius(temp);
+		temp = fahrenheitToCelsius(temp);
 	}
 	else if (targetUnits == 'I') {
-		celsiusToFahrenheit(temp);
+		temp = celsiusToFahrenheit(temp);
 	}
+	
+	return temp;
 }
 
 /*
@@ -90,11 +96,13 @@ float Converter::convertTemperature (float temp, char targetUnits){
  */
 float Converter::convertDistance (float distance, char targetUnits){
 	if (targetUnits == 'M'){
-		feetToMeters(distance);
+		distance = feetToMeters(distance);
 	}
 	else if (targetUnits == 'I'){	
-		metersToFeet(distance);
+		distance = metersToFeet(distance);
 	}
+	
+	return distance;
 }
 /*
  * Unit testing functions. Do not alter.
