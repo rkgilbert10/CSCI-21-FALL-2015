@@ -1,5 +1,11 @@
 /*
- * Programming Challenge 10
+ * Programming Challenge 9
+ * Rachel Gilbert
+ * 
+ * Created: 9/24/15
+ * Last Modified: 9/24/15
+ * Notes:
+ * Sources used: 
  */
 #include <cassert>
 #include <iomanip>
