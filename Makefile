@@ -50,5 +50,9 @@ Challenge11: Challenge11.cpp
 Challenge12: Challenge12.cpp
 	g++ -o Challenge12 Challenge12.cpp
 	
+Challenge13: Challenge13.cpp
+	g++ -o Challenge13 Challenge13.cpp
+	
 ProgrammingProject1: ProgrammingProject1.cpp
-	g++ -o ProgrammingProject1 ProgrammingProject1.cpp
+	g++ -o ProgrammingProject1 ProgrammingProject1.cpp.
+	
