@@ -61,6 +61,9 @@ Challenge15: Challenge15.cpp
 	
 ProgrammingProject1: ProgrammingProject1.cpp
 	g++ $(FLAGS) -o ProgrammingProject1 ProgrammingProject1.cpp
+	
+ProgProject2: ProgProject2.cpp
+	g++ -o ProgProject2 ProgProject2.cpp
 
 
 FLAGS = -Wall -Wextra -pedantic
