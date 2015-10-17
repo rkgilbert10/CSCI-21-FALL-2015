@@ -10,7 +10,7 @@
  * 
  * SOURCES USED: Used CinReader by Boyd Trolinger
  * Notes: Reference Labs 11/12/13/14/15
- * Driver is not fully functional. Ran out of time/recourses. 
+ * 
  * 
  */
 
@@ -24,9 +24,9 @@
 #include <string>
 using namespace std;
 
-
 int main (int argc, char* argv[]) {
-    
+
+
     //Local variables
     CinReader reader;
     int newPrizeValue;
@@ -42,7 +42,6 @@ int main (int argc, char* argv[]) {
     Box* b = NULL;
     Box* p1 = NULL;
     Box* p2 = NULL;
-    Box* prizelist = NULL;
     
 	if (p != NULL)
         delete p;
@@ -82,29 +81,28 @@ int main (int argc, char* argv[]) {
     				break;
     			case 2:
     			    //2. Get prizes
-    			    //Doesn't work. Returns NO NAME - counts prizes currently. 
     			    prizes = b->getPrizeCount();
     			    if(prizes == 0) {
     			        cout << "There are no prizes." << endl;
     			    } else {
     			        //Display prize list. 
-    			       prizelist = new Box();
+    			       cout << "\n -----------Prizes----------- \n";
     				   for(unsigned int i = 0; i<prizes; i++){
-    				      cout << i+1 << ". " << prizelist->getPrize(i).getPrizeName() << endl;
+    				      cout << i+1 << ". " << b->getPrize(i).getPrizeName() << endl;
     				   }
     				   cout << endl << endl;
     			    }
     				break;
     			case 3:
-    			    //3. Remove prize - Doesn't work. 
-    			    prizelist = new Box();
+    			    //3. Remove prize 
     			    prizes = b->getPrizeCount();
     			    if(prizes == 0) {
     			        cout << "There are no prizes." << endl;
     			    } else {
     			        //Display prize list. 
+    			       cout << "\n -----------Prizes----------- \n";
     				   for(unsigned int i = 0; i<prizes; i++){
-    				      cout << i+1 << ". " << prizelist->getPrize(i).getPrizeName() << endl;
+    				      cout << i+1 << ". " << b->getPrize(i).getPrizeName() << endl;
     				   }
     				   cout << endl << endl;
     			    }
@@ -113,7 +111,7 @@ int main (int argc, char* argv[]) {
     			    if (newRemovePrize > prizes) {
     			        cout << "There is no prize there." << endl;
     			    } else {
-    			        prizelist->removePrize(newRemovePrize);
+    			        b->removePrize(newRemovePrize-1);
     			    }
     			    break;
     			    
@@ -168,12 +166,13 @@ int main (int argc, char* argv[]) {
             delete p1;
         if(p2 != NULL)
             delete p2;
-        if(prizelist != NULL)
-            delete prizelist;
         if (b != NULL)
             delete b;
         if (p != NULL)
             delete p;
-return 0;
+
+
+
+    return 0;
 }
 
