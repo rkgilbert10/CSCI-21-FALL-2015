@@ -59,6 +59,9 @@ Challenge14: Challenge14.cpp
 Challenge15: Challenge15.cpp
 	g++ $(FLAGS) -o Challenge15 Challenge15.cpp
 	
+Challenge16: Challenge16.cpp
+	g++ $(FLAGS) -o Challenge16 Challenge16.cpp
+	
 ProgrammingProject1: ProgrammingProject1.cpp
 	g++ $(FLAGS) -o ProgrammingProject1 ProgrammingProject1.cpp
 	
